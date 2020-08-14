@@ -25,8 +25,8 @@ Execute:
 import PyPDF2
 import sys
 
-inputs = sys.argv[1:-1]
-output = sys.argv[-1]
+inputs = sys.argv[1:-1] # Pulls input files
+output = sys.argv[-1] # Pulls Output file name
 
 def pdf_combine(pdf_list):
     merger = PyPDF2.PdfFileMerger()
